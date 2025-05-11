@@ -14,59 +14,148 @@
         <meta property="og:title" content="Heroic Race Guide">
         <meta property="og:description"
               content="Heroic Guide for Dragon City">
-        <style>
+<style>
+  .hl { display:none; }
   
-          
-    .hl { display:none; }
-    
-    .nnh { width: 98%; background-color: grey; padding-top: 10px; 
-      padding-bottom: 10px; padding-left: 2%; color: white;  }
-    
-    .nnt { 
-      max-width: 94.5% !important;
-      margin-left: 10px;
-      width: 635px;
-    padding-left: 15px;
-      background-color: #dbdbdb; padding-top: 20px; 
-      padding-bottom: 20px; margin-top: 10px; margin-bottom: 10px; padding-left: 2%;  }
-    
-    .nn {clear:both; margin-bottom: 30px; padding: 10px;
-     }
-    .mm { margin-top: 15px; float: left;  height: 130px; width: 300px; 
-     margin-right: 10px; padding: 10px; padding-bottom:18px;  background-color: #dbdbdb;  }
-    .mh { font-weight: bold; margin-bottom: 5px;}
-    .mi { float: left; height: 80px;  }
-    .mi img { height: 80px; }
-    .ml { float: left; margin-left: 15px; float:left; }
-    
-    .m1 , .m2 {float:left; clear:none; margin-top: 2px; margin-bottom: 2px;  }
-    .m1 { width: 100px;} 
-    .m2 { width: 100px;}
-    .mz { clear: both; }
-    .lap_select { width: 100%; margin: auto; font-size: 22px; margin-bottom: 10px; }
-    
-     @media (max-width:1000px)  { 	
-     /* Page gets smaller than 801px */
-       
-       #body_content { padding-left: 10px; padding-right: 10px; }
-       .mm { width: 94%; padding-left: 3%; padding-right: 3% }
-       
-       .mi img { width: 60px; height: 60px;  } 
+  .nnh { 
+    width: 98%; 
+    background-color: grey; 
+    padding: 10px 2%;
+    color: white;  
+  }
+  
+  .nnt { 
+    max-width: 94.5% !important;
+    margin: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #dbdbdb; 
+    padding: 20px 2%;
+  }
+  
+  .nn {
+    clear: both; 
+    margin-bottom: 30px; 
+    padding: 10px;
+  }
+  
+  .mm { 
+    margin-top: 15px; 
+    float: left;  
+    width: 300px; 
+    margin-right: 10px; 
+    padding: 10px; 
+    padding-bottom: 18px;  
+    background-color: #dbdbdb;
+    min-height: 130px;
+    height: auto;
+    box-sizing: border-box;
+  }
+  
+  .mh { font-weight: bold; margin-bottom: 5px; }
+  
+  .mi { 
+    float: left; 
+    height: 80px;  
+  }
+  
+  .mi img { height: 80px; }
+  
+  .ml { 
+    float: left; 
+    margin-left: 15px;
+    width: calc(100% - 95px);
+  }
+  
+  .m1, .m2 {
+    float: left; 
+    clear: none;
+    margin-top: 2px; 
+    margin-bottom: 2px;  
+  }
+  
+  .m1 { width: 45%; } 
+  .m2 { width: 55%; }
+  
+  .mz { clear: both; }
+  
+  .lap_select { 
+    width: 100%; 
+    margin: auto; 
+    font-size: 22px; 
+    margin-bottom: 10px; 
+  }
+  
+  @media (max-width:1000px) { 
+    #body_content { 
+      padding-left: 10px; 
+      padding-right: 10px; 
     }
     
-     @media (max-width:500px)  { 	
-     /* Page gets smaller than 801px */
-       .m1 , .m2 { font-size: 12px; width: 90px; }
-       .mm { height: 110px; } 
+    .mm { 
+      width: 100%; 
+      margin-right: 0;
+      box-sizing: border-box;
+      padding-left: 3%; 
+      padding-right: 3%;
+    }
+  
+    .mi img { 
+      width: 60px; 
+      height: 60px; 
+    }
+  }
+  
+  @media (max-width:500px) {
+    .nn {
+      padding: 5px;
     }
     
-    @media (min-width:1000px)  { 	
-       /* Page gets bigger than 801px */
-      .nnh { width: 635px; padding-left: 15px;}
-      #lap_storage {     width: 680px;  margin: auto; margin-bottom:50px; }
+    .mm {
+      width: 100%;
+      padding: 10px;
+      height: auto;
+      min-height: 110px;
+      margin-bottom: 15px;
     }
-  </style>
-    <style>    
+    
+    .m1, .m2 { 
+      font-size: 14px;
+      line-height: 1.3;
+    }
+    
+    .mi {
+      height: 60px;
+    }
+    
+    .mi img {
+      height: 60px;
+      width: 60px;
+    }
+    
+    .ml {
+      width: calc(100% - 70px);
+    }
+    
+    .lap_select {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width:1000px) {
+    .nnh { 
+      width: 635px; 
+      padding-left: 15px;
+    }
+    
+    #lap_storage {
+      width: 680px;
+      margin: auto;
+      margin-bottom: 50px;
+    }
+  }
+</style>
+<style>    
   body, html { margin:0px; min-height:100%; min-width: 340px; }
   
   body { 
@@ -6577,7 +6666,7 @@ body {
 
     function update_laps(value) {
         // Hide all laps
-        for (let i = 1; i <= 29; i++) { 
+        for (let i = 1; i <= 29; i++) { // Assuming you have laps 1-29
             document.getElementById('hl' + i).style.display = 'none';
         }
 
