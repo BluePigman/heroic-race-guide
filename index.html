@@ -20,9 +20,9 @@
 
             <div id="lap_storage">
               <div id="buttons_row">
-              <button id="change_lap" onclick="changeLap(-1)">◄</button>
+                <button id="prev_lap" onclick="changeLap(-1)">◄</button>
 
-                <select id="lp_select" class="lap_select"
+                  <select id="lp_select" class="lap_select"
                       onchange="update_laps(this.value)"><option
                           value="1">Lap 1</option><option
                           value="2">Lap 2</option><option
@@ -54,8 +54,8 @@
                           value="28">Lap 28</option><option
                           value="29">Lap 29</option></select>
 
-                  <button id="change_lap" onclick="changeLap(1)">►</button>
-                </div>
+                  <button id="next_lap" onclick="changeLap(1)">►</button>
+              </div>
 
                 <div class="hl" id="hl1"><div class="nn" id="nn_1_1">
                           <div class="nnh"> Lap 1 - Node 1 </div>

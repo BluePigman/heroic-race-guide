@@ -125,37 +125,31 @@ h1 {
 }
 
 .lap_select {
-    width: 100%;
-    margin: auto;
     font-size: 22px;
-    margin-bottom: 10px;
     background-color: #3a3a3a;
     color: #e0e0e0;
     border: 1px solid #555;
+    padding: 10px 15px;
+    flex: auto;
 }
 
 #buttons_row {
     display: flex;
-    align-items: center;
-    vertical-align: middle;
-    height: 28px;
+    align-items: stretch;
+    gap: 10px;
 }
 
 #buttons_row button {
-    background-color: #2a3a4a;
+    background-color: #324f6d;
     color: #ffffff;
     border: 1px solid #4a5a6a;
     border-radius: 4px;
-    transition: background-color 0.2s ease, opacity 0.2s ease;
-}
-
-#change_lap {
-    padding: 5px 10px;
-    margin-left: 5px;
+    padding: 10px 20px;
     cursor: pointer;
+    font-size: 24px;
 }
 
-#buttons_row button:hover:not(:disabled) {
+#buttons_row button:hover {
     background-color: #3a4a5a;
 }
 
