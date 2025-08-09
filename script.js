@@ -1,71 +1,147 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const lapTitle = document.getElementById('current-lap-num');
+    const lapDisplay = document.getElementById('lap-display');
+    const lapSelect = document.getElementById('lap-select');
+    const prevLapBtn = document.getElementById('prev-lap');
+    const nextLapBtn = document.getElementById('next-lap');
 
-var event_name_string = 'heroic_race';
-var current_lap = 1; 
+    let allLapsData = [];
+    let currentLapIndex = 0;
 
-function local_storage_value(localStorageName, localStorageValue) {
-    if (typeof localStorageValue === 'undefined') {
-        localStorageValue = 'default';
-    }
-    if (localStorageValue == 'default') {
-        return localStorage.getItem(localStorageName);
-    } else {
-        localStorage.setItem(localStorageName, localStorageValue);
-        return "set localstorage name '" + localStorageName + "' to value '" + localStorageValue + "'";
-    }
-}
+    const LAST_LAP_KEY = 'lastVisitedLap';
 
-function changeLap(direction) {
-    var currentLapNum = parseInt(current_lap);
-    var newLap = currentLapNum + direction;
-    if (newLap < 1) newLap = 1;
-    if (newLap > 29) newLap = 29;
-    document.getElementById('lp_select').value = newLap;
-    update_laps(newLap);
-    updateButtonStates();
-}
-
-function updateButtonStates() {
-    var currentLapNum = parseInt(current_lap);
-    var prevButton = document.getElementById('prev_lap');
-    var nextButton = document.getElementById('next_lap');
-    prevButton.disabled = currentLapNum <= 1;
-    nextButton.disabled = currentLapNum >= 29;
-    prevButton.style.opacity = currentLapNum <= 1 ? '0.5' : '1';
-    nextButton.style.opacity = currentLapNum >= 29 ? '0.5' : '1';
-}
-
-// Update the existing update_laps function to call updateButtonStates
-function update_laps(value) {
-    for (let i = 1; i <= 29; i++) {
-        var lapElement = document.getElementById('hl' + i);
-        if (lapElement) {
-            lapElement.style.display = 'none';
+    async function fetchLapData() {
+        try {
+            const response = await fetch('lapInfo.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            allLapsData = await response.json();
+            initializeApp();
+        } catch (error) {
+            console.error("Could not fetch lap data:", error);
+            lapDisplay.innerHTML = `<p style="color: red;">Failed to load lap data. Please ensure 'lapInfo.json' is present and valid.</p>`;
         }
     }
 
-    var selectedLap = document.getElementById('hl' + value);
-    if (selectedLap) {
-        selectedLap.style.display = 'block';
+    function renderLap() {
+        if (allLapsData.length === 0) return;
+
+        const currentLap = allLapsData[currentLapIndex];
+        lapTitle.textContent = currentLap.lapNum;
+        lapDisplay.innerHTML = ''; 
+        lapSelect.value = currentLap.lapNum;
+
+        currentLap.nodes.forEach(node => {
+            const nodeRow = document.createElement('div');
+            nodeRow.classList.add('node-row');
+
+            const nodeNumBox = document.createElement('div');
+            nodeNumBox.classList.add('node-number-box');
+            nodeNumBox.textContent = node.node;
+            nodeRow.appendChild(nodeNumBox);
+
+            const missionsContainer = document.createElement('div');
+            missionsContainer.classList.add('missions-container');
+            nodeRow.appendChild(missionsContainer);
+
+            node.missions.forEach(mission => {
+                const missionBox = document.createElement('div');
+                missionBox.classList.add('mission-box');
+
+                const missionImg = document.createElement('img');
+                missionImg.classList.add('mission-image');
+                missionImg.src = `assets/${mission.type}.png`;
+                missionImg.alt = mission.type.charAt(0).toUpperCase() + mission.type.slice(1) + " icon";
+                missionImg.onerror = function() {
+                    this.onerror=null;
+                };
+                missionBox.appendChild(missionImg);
+
+                const detailsDiv = document.createElement('div');
+                detailsDiv.classList.add('mission-details');
+
+                const poolDiv = document.createElement('div');
+                poolDiv.classList.add('pool');
+                poolDiv.textContent = mission.pool;
+                detailsDiv.appendChild(poolDiv);
+
+                const waitDiv = document.createElement('div');
+                waitDiv.classList.add('wait-time');
+                waitDiv.textContent = `WAIT 1: ${mission.wait_1}`;
+                detailsDiv.appendChild(waitDiv);
+
+                const totalTimeDiv = document.createElement('div');
+                totalTimeDiv.classList.add('total-time');
+                totalTimeDiv.textContent = `TOTAL: ${mission.total_time}`;
+                detailsDiv.appendChild(totalTimeDiv);
+
+
+                missionBox.appendChild(detailsDiv);
+                missionsContainer.appendChild(missionBox);
+            });
+            lapDisplay.appendChild(nodeRow);
+        });
+
+        updateNavigationButtons();
+        saveLapState();
     }
-    current_lap = value;
-    local_storage_value(event_name_string + '_lap_js', current_lap);
-    updateButtonStates();
-}
 
-function load_defaults() {
-    var default_lap = local_storage_value(event_name_string + '_lap_js');
-
-    if (default_lap == null || default_lap == '' || isNaN(default_lap)) {
-        default_lap = 1;
+    function updateNavigationButtons() {
+        prevLapBtn.disabled = currentLapIndex === 0;
+        nextLapBtn.disabled = currentLapIndex === allLapsData.length - 1;
     }
 
-    default_lap = String(default_lap);
-    document.getElementById('lp_select').value = default_lap;
-    update_laps(default_lap);
-}
+    function populateLapDropdown() {
+        lapSelect.innerHTML = ''; 
+        allLapsData.forEach(lap => {
+            const option = document.createElement('option');
+            option.value = lap.lapNum;
+            option.textContent = `LAP ${lap.lapNum}`;
+            lapSelect.appendChild(option);
+        });
+    }
 
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', load_defaults);
-} else {
-    load_defaults();
-}
+    function goToPrevLap() {
+        if (currentLapIndex > 0) {
+            currentLapIndex--;
+            renderLap();
+        }
+    }
+
+    function goToNextLap() {
+        if (currentLapIndex < allLapsData.length - 1) {
+            currentLapIndex++;
+            renderLap();
+        }
+    }
+
+    function goToSelectedLap(event) {
+        const selectedLapNum = parseInt(event.target.value);
+        currentLapIndex = allLapsData.findIndex(lap => lap.lapNum === selectedLapNum);
+        renderLap();
+    }
+
+    function saveLapState() {
+        localStorage.setItem(LAST_LAP_KEY, currentLapIndex);
+    }
+
+    function loadLapState() {
+        const savedIndex = localStorage.getItem(LAST_LAP_KEY);
+        if (savedIndex !== null) {
+            currentLapIndex = parseInt(savedIndex);
+        }
+    }
+
+    function initializeApp() {
+        populateLapDropdown();
+        loadLapState();
+        renderLap();
+
+        prevLapBtn.addEventListener('click', goToPrevLap);
+        nextLapBtn.addEventListener('click', goToNextLap);
+        lapSelect.addEventListener('change', goToSelectedLap);
+    }
+
+    fetchLapData();
+});

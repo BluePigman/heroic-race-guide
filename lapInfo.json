@@ -1,0 +1,1334 @@
+[
+    {
+        "lapNum": 1,
+        "nodes": [
+            {
+                "node": 1,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "4/4",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 2,
+                "missions": [
+                    {
+                        "type": "gold",
+                        "pool": "5/5",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 3,
+                "missions": [
+                    {
+                        "type": "food",
+                        "pool": "4/4",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 4,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "5/6",
+                        "wait_1": "5m",
+                        "total_time": "5m"
+                    }
+                ]
+            },
+            {
+                "node": 5,
+                "missions": [
+                    {
+                        "type": "food",
+                        "pool": "4/4",
+                        "wait_1": "15m",
+                        "total_time": "15m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lapNum": 2,
+        "nodes": [
+            {
+                "node": 1,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "8/8",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 2,
+                "missions": [
+                    {
+                        "type": "food",
+                        "pool": "6/6",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "gold",
+                        "pool": "8/8",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 3,
+                "missions": [
+                    {
+                        "type": "leagues",
+                        "pool": "1/1",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 4,
+                "missions": [
+                    {
+                        "type": "food",
+                        "pool": "6/7",
+                        "wait_1": "19m",
+                        "total_time": "19m"
+                    },
+                    {
+                        "type": "battle",
+                        "pool": "2",
+                        "wait_1": "15m",
+                        "total_time": "15m"
+                    }
+                ]
+            },
+            {
+                "node": 5,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "8/10",
+                        "wait_1": "19m",
+                        "total_time": "38m"
+                    },
+                    {
+                        "type": "breed",
+                        "pool": "2/2",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lapNum": 3,
+        "nodes": [
+            {
+                "node": 1,
+                "missions": [
+                    {
+                        "type": "gold",
+                        "pool": "11/11",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "food",
+                        "pool": "8/8",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 2,
+                "missions": [
+                    {
+                        "type": "leagues",
+                        "pool": "2/2",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 3,
+                "missions": [
+                    {
+                        "type": "food",
+                        "pool": "9/9",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "battle",
+                        "pool": "3",
+                        "wait_1": "15m - 30m",
+                        "total_time": "45m"
+                    }
+                ]
+            },
+            {
+                "node": 4,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "9/12",
+                        "wait_1": "10m",
+                        "total_time": "30m"
+                    },
+                    {
+                        "type": "food",
+                        "pool": "8/10",
+                        "wait_1": "15m",
+                        "total_time": "30m"
+                    }
+                ]
+            },
+            {
+                "node": 5,
+                "missions": [
+                    {
+                        "type": "breed",
+                        "pool": "3/3",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lapNum": 4,
+        "nodes": [
+            {
+                "node": 1,
+                "missions": [
+                    {
+                        "type": "food",
+                        "pool": "21/21",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 2,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "14/14",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "battle",
+                        "pool": "4",
+                        "wait_1": "15m - 30m",
+                        "total_time": "1h"
+                    }
+                ]
+            },
+            {
+                "node": 3,
+                "missions": [
+                    {
+                        "type": "leagues",
+                        "pool": "4/4",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 4,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "10/16",
+                        "wait_1": "15m 10s",
+                        "total_time": "1h 31m"
+                    },
+                    {
+                        "type": "gold",
+                        "pool": "9/14",
+                        "wait_1": "18m 12s",
+                        "total_time": "1h 31m"
+                    }
+                ]
+            },
+            {
+                "node": 5,
+                "missions": [
+                    {
+                        "type": "battle",
+                        "pool": "5",
+                        "wait_1": "15m - 30m",
+                        "total_time": "1h 15m"
+                    },
+                    {
+                        "type": "food",
+                        "pool": "6/12",
+                        "wait_1": "30m 20s",
+                        "total_time": "3h 2m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lapNum": 5,
+        "nodes": [
+            {
+                "node": 1,
+                "missions": [
+                    {
+                        "type": "breed",
+                        "pool": "6/6",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 2,
+                "missions": [
+                    {
+                        "type": "food",
+                        "pool": "13/13",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "gold",
+                        "pool": "17/17",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 3,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "26/35",
+                        "wait_1": "6m 40s",
+                        "total_time": "1h"
+                    }
+                ]
+            },
+            {
+                "node": 4,
+                "missions": [
+                    {
+                        "type": "leagues",
+                        "pool": "2/2",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "hatch",
+                        "pool": "2/2",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 5,
+                "missions": [
+                    {
+                        "type": "battle",
+                        "pool": "4",
+                        "wait_1": "1h - 3h",
+                        "total_time": "5h"
+                    },
+                    {
+                        "type": "food",
+                        "pool": "9/14",
+                        "wait_1": "16m",
+                        "total_time": "1h 20m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lapNum": 6,
+        "nodes": [
+            {
+                "node": 1,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "19/19",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "gold",
+                        "pool": "20/20",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 2,
+                "missions": [
+                    {
+                        "type": "food",
+                        "pool": "29/29",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 3,
+                "missions": [
+                    {
+                        "type": "hatch",
+                        "pool": "2/3",
+                        "wait_1": "1h",
+                        "total_time": "1h"
+                    },
+                    {
+                        "type": "feed",
+                        "pool": "16/21",
+                        "wait_1": "12m",
+                        "total_time": "1h"
+                    }
+                ]
+            },
+            {
+                "node": 4,
+                "missions": [
+                    {
+                        "type": "leagues",
+                        "pool": "3/3",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "battle",
+                        "pool": "6",
+                        "wait_1": "1h - 3h",
+                        "total_time": "7h"
+                    }
+                ]
+            },
+            {
+                "node": 5,
+                "missions": [
+                    {
+                        "type": "hatch",
+                        "pool": "2/3",
+                        "wait_1": "2h",
+                        "total_time": "2h"
+                    },
+                    {
+                        "type": "breed",
+                        "pool": "3/4",
+                        "wait_1": "2h",
+                        "total_time": "2h"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lapNum": 7,
+        "nodes": [
+            {
+                "node": 1,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "23/23",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "gold",
+                        "pool": "23/23",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 2,
+                "missions": [
+                    {
+                        "type": "food",
+                        "pool": "16/16",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "battle",
+                        "pool": "5",
+                        "wait_1": "1h - 3h",
+                        "total_time": "6h"
+                    }
+                ]
+            },
+            {
+                "node": 3,
+                "missions": [
+                    {
+                        "type": "breed",
+                        "pool": "7/8",
+                        "wait_1": "27m",
+                        "total_time": "27m"
+                    }
+                ]
+            },
+            {
+                "node": 4,
+                "missions": [
+                    {
+                        "type": "leagues",
+                        "pool": "3/3",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "feed",
+                        "pool": "19/25",
+                        "wait_1": "9m",
+                        "total_time": "54m"
+                    }
+                ]
+            },
+            {
+                "node": 5,
+                "missions": [
+                    {
+                        "type": "hatch",
+                        "pool": "3/4",
+                        "wait_1": "1h 47m",
+                        "total_time": "1h 47m"
+                    },
+                    {
+                        "type": "breed",
+                        "pool": "3/5",
+                        "wait_1": "53m 30s",
+                        "total_time": "1h 47m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lapNum": 8,
+        "nodes": [
+            {
+                "node": 1,
+                "missions": [
+                    {
+                        "type": "food",
+                        "pool": "17/17",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "gold",
+                        "pool": "26/26",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 2,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "53/53",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 3,
+                "missions": [
+                    {
+                        "type": "hatch",
+                        "pool": "4/4",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "battle",
+                        "pool": "5",
+                        "wait_1": "1h - 3h",
+                        "total_time": "6h"
+                    } 
+                ]
+            },
+            {
+                "node": 4,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "50/57",
+                        "wait_1": "9m 9s",
+                        "total_time": "1h 40m 3s"
+                    }
+                ]
+            },
+            {
+                "node": 5,
+                "missions": [
+                    {
+                        "type": "leagues",
+                        "pool": "3/3",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "breed",
+                        "pool": "3/5",
+                        "wait_1": "1h 4m 30s",
+                        "total_time": "2h 9m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lapNum": 9,
+        "nodes": [
+            {
+                "node": 1,
+                "missions": [
+                    {
+                        "type": "food",
+                        "pool": "18/18",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "gold",
+                        "pool": "29/29",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 2,
+                "missions": [
+                    {
+                        "type": "leagues",
+                        "pool": "7/7",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 3,
+                "missions": [
+                    {
+                        "type": "food",
+                        "pool": "32/37",
+                        "wait_1": "6m 48s",
+                        "total_time": "34m"
+                    }
+                ]
+            },
+            {
+                "node": 4,
+                "missions": [
+                    {
+                        "type": "battle",
+                        "pool": "6",
+                        "wait_1": "1h - 3h",
+                        "total_time": "7h"
+                    },
+                    {
+                        "type": "feed",
+                        "pool": "20/31",
+                        "wait_1": "6m 17s",
+                        "total_time": "1h 10m"
+                    }
+                ]
+            },
+            {
+                "node": 5,
+                "missions": [
+                    {
+                        "type": "breed",
+                        "pool": "6/10",
+                        "wait_1": "34m 15s",
+                        "total_time": "2h 17m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lapNum": 10,
+        "nodes": [
+            {
+                "node": 1,
+                "missions": [
+                    {
+                        "type": "food",
+                        "pool": "39/39",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 2,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "65/65",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 3,
+                "missions": [
+                    {
+                        "type": "gold",
+                        "pool": "32/32",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "battle",
+                        "pool": "6",
+                        "wait_1": "1h 20m - 6h 40m",
+                        "total_time": "12h"
+                    }
+                ]
+            },
+            {
+                "node": 4,
+                "missions": [
+                    {
+                        "type": "leagues",
+                        "pool": "4/4",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "food",
+                        "pool": "18/21",
+                        "wait_1": "5m 20s",
+                        "total_time": "16m"
+                    }
+                ]
+            },
+            {
+                "node": 5,
+                "missions": [
+                    {
+                        "type": "hatch",
+                        "pool": "3/4",
+                        "wait_1": "32m",
+                        "total_time": "32m"
+                    },
+                    {
+                        "type": "breed",
+                        "pool": "5/6",
+                        "wait_1": "32m",
+                        "total_time": "32m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lapNum": 11,
+        "nodes": [
+            {
+                "node": 1,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "34/34",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "food",
+                        "pool": "22/22",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 2,
+                "missions": [
+                    {
+                        "type": "hatch",
+                        "pool": "5/5",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "food",
+                        "pool": "23/23",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 3,
+                "missions": [
+                    {
+                        "type": "gold",
+                        "pool": "61/70",
+                        "wait_1": "16m 40s",
+                        "total_time": "2h 30m"
+                    }
+                ]
+            },
+            {
+                "node": 4,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "27/36",
+                        "wait_1": "16m 40s",
+                        "total_time": "2h 30m"
+                    },
+                    {
+                        "type": "leagues",
+                        "pool": "4/4",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 5,
+                "missions": [
+                    {
+                        "type": "battle",
+                        "pool": "7",
+                        "wait_1": "1h 20m - 6h 40m",
+                        "total_time": "13h 20m"
+                    },
+                    {
+                        "type": "food",
+                        "pool": "15/24",
+                        "wait_1": "15m",
+                        "total_time": "2h 15m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lapNum": 12,
+        "nodes": [
+            {
+                "node": 1,
+                "missions": [
+                    {
+                        "type": "breed",
+                        "pool": "12/12",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 2,
+                "missions": [
+                    {
+                        "type": "gold",
+                        "pool": "76/76",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 3,
+                "missions": [
+                    {
+                        "type": "food",
+                        "pool": "22/25",
+                        "wait_1": "50m",
+                        "total_time": "2h 30m"
+                    },
+                    {
+                        "type": "feed",
+                        "pool": "33/38",
+                        "wait_1": "30m",
+                        "total_time": "2h 30m"
+                    }
+                ]
+            },
+            {
+                "node": 4,
+                "missions": [
+                    {
+                        "type": "leagues",
+                        "pool": "4/4",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "hatch",
+                        "pool": "4/5",
+                        "wait_1": "2h 30m",
+                        "total_time": "2h 30m"
+                    }
+                ]
+            },
+            {
+                "node": 5,
+                "missions": [
+                    {
+                        "type": "battle",
+                        "pool": "7",
+                        "wait_1": "1h 20m - 6h 40m",
+                        "total_time": "13h 20m"
+                    },
+                    {
+                        "type": "food",
+                        "pool": "16/26",
+                        "wait_1": "15m",
+                        "total_time": "2h 30m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lapNum": 13,
+        "nodes": [
+            {
+                "node": 1,
+                "missions": [
+                    {
+                        "type": "hatch",
+                        "pool": "10/10",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 2,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "40/40",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "leagues",
+                        "pool": "5/5",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 3,
+                "missions": [
+                    {
+                        "type": "gold",
+                        "pool": "62/82",
+                        "wait_1": "7m 30s",
+                        "total_time": "2h 30m"
+                    }
+                ]
+            },
+            {
+                "node": 4,
+                "missions": [
+                    {
+                        "type": "breed",
+                        "pool": "4/7",
+                        "wait_1": "1h 6m 40s",
+                        "total_time": "3h 20m"
+                    },
+                    {
+                        "type": "hatch",
+                        "pool": "4/6",
+                        "wait_1": "1h 40m",
+                        "total_time": "3h 20m"
+                    }
+                ]
+            },
+            {
+                "node": 5,
+                "missions": [
+                    {
+                        "type": "food",
+                        "pool": "17/27",
+                        "wait_1": "16m 36s",
+                        "total_time": "2h 46m"
+                    },
+                    {
+                        "type": "battle",
+                        "pool": "7",
+                        "wait_1": "1h 20m - 6h 40m",
+                        "total_time": "13h 20m"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lapNum": 14,
+        "nodes": [
+            {
+                "node": 1,
+                "missions": [
+                    {
+                        "type": "food",
+                        "pool": "56/56",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 2,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "73/83",
+                        "wait_1": "3m 42s",
+                        "total_time": "37m"
+                    }
+                ]
+            },
+            {
+                "node": 3,
+                "missions": [
+                    {
+                        "type": "leagues",
+                        "pool": "5/5",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "gold",
+                        "pool": "33/44",
+                        "wait_1": "6m 39s",
+                        "total_time": "1h 13m 9s"
+                    }
+                ]
+            },
+            {
+                "node": 4,
+                "missions": [
+                    {
+                        "type": "food",
+                        "pool": "18/29",
+                        "wait_1": "13m 22s",
+                        "total_time": "2h 27m 2s"
+                    },
+                    {
+                        "type": "battle",
+                        "pool": "12",
+                        "wait_1": "1h 20m - 6h 40m",
+                        "total_time": "20h"
+                    }
+                ]
+            },
+            {
+                "node": 5,
+                "missions": [
+                    {
+                        "type": "breed",
+                        "pool": "7/14",
+                        "wait_1": "1h 11m 26s",
+                        "total_time": "8h 20m 2s"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lapNum": 15,
+        "nodes": [
+            {
+                "node": 1,
+                "missions": [
+                    {
+                        "type": "gold",
+                        "pool": "47/47",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "food",
+                        "pool": "30/30",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 2,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "33/44",
+                        "wait_1": "6m 50s",
+                        "total_time": "1h 15m 10s"
+                    },
+                    {
+                        "type": "leagues",
+                        "pool": "5/5",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 3,
+                "missions": [
+                    {
+                        "type": "food",
+                        "pool": "47/62",
+                        "wait_1": "10m",
+                        "total_time": "2h 30m"
+                    }
+                ]
+            },
+            {
+                "node": 4,
+                "missions": [
+                    {
+                        "type": "battle",
+                        "pool": "8",
+                        "wait_1": "1h 20m - 8h",
+                        "total_time": "16h"
+                    },
+                    {
+                        "type": "breed",
+                        "pool": "4/7",
+                        "wait_1": "50m",
+                        "total_time": "2h 30m"
+                    }
+                ]
+            },
+            {
+                "node": 5,
+                "missions": [
+                    {
+                        "type": "hatch",
+                        "pool": "3/6",
+                        "wait_1": "1h 56m 40s",
+                        "total_time": "5h 50m"
+                    },
+                    {
+                        "type": "feed",
+                        "pool": "23/46",
+                        "wait_1": "15m 14s",
+                        "total_time": "5h 50m 22s"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lapNum": 16,
+        "nodes": [
+            {
+                "node": 1,
+                "missions": [
+                    {
+                        "type": "gold",
+                        "pool": "50/50",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "food",
+                        "pool": "32/32",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 2,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "71/94",
+                        "wait_1": "3m 16s",
+                        "total_time": "1h 15m 8s"
+                    }
+                ]
+            },
+            {
+                "node": 3,
+                "missions": [
+                    {
+                        "type": "battle",
+                        "pool": "3",
+                        "wait_1": "1h 20m - 8h",
+                        "total_time": "9h 20m"
+                    },
+                    {
+                        "type": "food",
+                        "pool": "25/33",
+                        "wait_1": "18m 45s",
+                        "total_time": "2h 30m"
+                    }
+                ]
+            },
+            {
+                "node": 4,
+                "missions": [
+                    {
+                        "type": "leagues",
+                        "pool": "6/6",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "battle",
+                        "pool": "5",
+                        "wait_1": "1h 20m - 8h",
+                        "total_time": "12h"
+                    }
+                ]
+            },
+            {
+                "node": 5,
+                "missions": [
+                    {
+                        "type": "hatch",
+                        "pool": "3/6",
+                        "wait_1": "1h 40m",
+                        "total_time": "5h"
+                    },
+                    {
+                        "type": "gold",
+                        "pool": "27/53",
+                        "wait_1": "11m 33s",
+                        "total_time": "5h 18s"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "lapNum": 17,
+        "nodes": [
+            {
+                "node": 1,
+                "missions": [
+                    {
+                        "type": "feed",
+                        "pool": "49/49",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "food",
+                        "pool": "34/34",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    }
+                ]
+            },
+            {
+                "node": 2,
+                "missions": [
+                    {
+                        "type": "gold",
+                        "pool": "83/111",
+                        "wait_1": "2m 41s",
+                        "total_time": "1h 15m 8s"
+                    }
+                ]
+            },
+            {
+                "node": 3,
+                "missions": [
+                    {
+                        "type": "breed",
+                        "pool": "6/8",
+                        "wait_1": "1h 15m",
+                        "total_time": "2h 30m"
+                    },
+                    {
+                        "type": "feed",
+                        "pool": "38/51",
+                        "wait_1": "11m 33s",
+                        "total_time": "2h 30m 9s"
+                    }
+                ]
+            },
+            {
+                "node": 4,
+                "missions": [
+                    {
+                        "type": "leagues",
+                        "pool": "6/6",
+                        "wait_1": "-",
+                        "total_time": "-"
+                    },
+                    {
+                        "type": "hatch",
+                        "pool": "5/7",
+                        "wait_1": "4h 10m",
+                        "total_time": "8h 20m"
+                    }
+                ]
+            },
+            {
+                "node": 5,
+                "missions": [
+                    {
+                        "type": "battle",
+                        "pool": "8",
+                        "wait_1": "1h 20m - 8h",
+                        "total_time": "16h"
+                    },
+                    {
+                        "type": "food",
+                        "pool": "18/35",
+                        "wait_1": "41m 11s",
+                        "total_time": "11h 40m 7s"
+                    }
+                ]
+            }
+        ]
+    }
+]
